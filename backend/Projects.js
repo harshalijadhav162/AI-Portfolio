@@ -12,7 +12,7 @@ const Projects = () => {
     const fetchProjects = async () => {
       try {
         // Fetch data from your backend API
-        const response = await fetch('http://localhost:5000/api/projects');
+        const response = await fetch('/api/projects'); // Use relative path
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
